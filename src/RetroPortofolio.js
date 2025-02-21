@@ -77,7 +77,7 @@ const RetroPortfolio = () => {
             icon: <Cpu className="w-6 h-6" style={{ color: colors.primary }} />
         },
         {
-            title: 'Caffein.me',
+            title: 'CaffeInMe',
             description: 'Track and manage your daily caffeine intake with a beautiful and intuitive interface.',
             icon: <Coffee className="w-6 h-6" style={{ color: colors.primary }} />
         }
