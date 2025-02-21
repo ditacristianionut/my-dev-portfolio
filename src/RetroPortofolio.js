@@ -17,8 +17,7 @@ const colors = {
 
 const INTRO_LINES = [
     'Hello, World!',
-    "I'm an Android Developer",
-    'Specializing in widgets and utilities...',
+    "I'm an Android Developer"
 ];
 
 const RetroPortfolio = () => {
@@ -63,60 +62,29 @@ const RetroPortfolio = () => {
 
     const projects = [
         {
-            title: 'Hold My Link',
-            description: 'A minimalist clipboard manager that helps you save and organize your links with custom descriptions and tags.',
-            skills: ['Room Database', 'Material You', 'Clipboard Manager'],
-            icon: <Link2 className="w-6 h-6" style={{ color: colors.primary }} />,
-            features: [
-                'Custom link descriptions',
-                'Tag organization system',
-                'Material You design',
-                'Quick copy functionality'
-            ]
+            title: 'LaterLinks',
+            description: 'The ultimate tool for saving, organizing, and accessing your favorite links—all in one place! Whether you\'re browsing articles 📚, watching videos 🎬, or discovering new websites 🌐, LaterLinks lets you save links quickly and easily for later use.',
+            icon: <Link2 className="w-6 h-6" style={{ color: colors.primary }} />
         },
         {
             title: 'Something Widgets',
-            description: 'Collection of beautifully designed widgets featuring quotes, weather info, and customizable designs.',
-            skills: ['App Widgets', 'Material Design', 'RemoteViews'],
+            description: 'From Nothing to Something! Inspired by the minimalist Nothing OS, Perfected for You! ✨ Experience the sleek, minimalist beauty of widgets designed to elevate your home screen with style and functionality. From battery info to photos and a stylish clock, Something OS Widgets brings you all the essentials—without the need for any extra apps! 🎉',
             icon: <Layout className="w-6 h-6" style={{ color: colors.primary }} />,
-            features: [
-                'Multiple widget designs',
-                'Quote collections',
-                'Weather integration',
-                'Custom styling options'
-            ]
         },
         {
-            title: 'Android 12 Widgets',
-            description: 'Modern widget collection specifically designed for Android 12+ with Material You integration.',
-            skills: ['Dynamic Colors', 'Widget API', 'Material You'],
-            icon: <Cpu className="w-6 h-6" style={{ color: colors.primary }} />,
-            features: [
-                'Material You support',
-                'Dynamic color adaptation',
-                'Android 12+ optimization',
-                'Modern widget designs'
-            ]
+            title: 'Android Widgets (Material U)',
+            description: 'Bring the modern, sleek look of Android\'s Material U widgets to your phone, no matter what device you use! With Android Widgets (Material U), you can customize your home screen with beautifully designed, adaptive widgets that seamlessly change colors to match your wallpaper. It\'s the ultimate way to personalize your device and make it truly yours!',
+            icon: <Cpu className="w-6 h-6" style={{ color: colors.primary }} />
         },
         {
             title: 'Caffein.me',
             description: 'Track and manage your daily caffeine intake with a beautiful and intuitive interface.',
-            skills: ['Room Database', 'Charts', 'Health Tracking'],
-            icon: <Coffee className="w-6 h-6" style={{ color: colors.primary }} />,
-            features: [
-                'Caffeine intake tracking',
-                'Consumption analytics',
-                'Drink presets',
-                'Daily statistics'
-            ]
+            icon: <Coffee className="w-6 h-6" style={{ color: colors.primary }} />
         }
     ];
 
     const skills = [
-        'Kotlin', 'Material You', 'App Widgets', 'Room Database',
-        'Dynamic Colors', 'RemoteViews', 'WorkManager', 'Material Design',
-        'Android 12+', 'Jetpack Libraries', 'MVVM', 'Clean Architecture'
-    ];
+        "Kotlin", "Coroutines", "Jetpack Compose", "MVVM", "Clean Architecture", "Performance Optimization", "Retrofit", "GraphQL", "Room", "DataStore"];
 
     return (
         <div className="min-h-screen" style={{ background: colors.background }}>
@@ -205,26 +173,6 @@ const RetroPortfolio = () => {
                                 <p className="mb-4" style={{ color: colors.onBackground }}>
                                     {project.description}
                                 </p>
-                                <div className="mb-4">
-                                    <ul className="list-disc list-inside">
-                                        {project.features.map((feature, featureIndex) => (
-                                            <li key={featureIndex} className="text-sm mb-1" style={{ color: colors.onBackground }}>
-                                                {feature}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="flex flex-wrap gap-2">
-                                    {project.skills.map((skill, skillIndex) => (
-                                        <span
-                                            key={skillIndex}
-                                            className="text-sm px-3 py-1 rounded-full"
-                                            style={{ background: colors.tertiary, color: colors.onTertiary }}
-                                        >
-                                            {skill}
-                                        </span>
-                                    ))}
-                                </div>
                             </div>
                         ))}
                     </div>
