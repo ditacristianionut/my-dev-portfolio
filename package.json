@@ -1,7 +1,7 @@
 {
   "name": "my-dev-portofolio",
   "version": "0.1.0",
-  "homepage": "https://ditacristianionut.github.io/my-portfolio",
+  "homepage": "https://ditacristianionut.github.io/my-dev-portfolio",
   "private": true,
   "dependencies": {
     "@supabase/supabase-js": "^2.48.1",
