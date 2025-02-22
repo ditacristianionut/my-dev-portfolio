@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Terminal, Link2, Cpu, Layout, Coffee } from 'lucide-react';
+import { Terminal } from 'lucide-react';
 
 const colors = {
     background: '#F5F7F8',
@@ -64,22 +64,22 @@ const RetroPortfolio = () => {
         {
             title: 'LaterLinks',
             description: 'The ultimate tool for saving, organizing, and accessing your favorite links—all in one place! Whether you\'re browsing articles 📚, watching videos 🎬, or discovering new websites 🌐, LaterLinks lets you save links quickly and easily for later use.',
-            icon: <Link2 className="w-6 h-6" style={{ color: colors.primary }} />
+            icon: 'https://play-lh.googleusercontent.com/VijNlp7uyW2tQW2bg6HmXDwCl9T21iiZIfScHvtwk9PrDw6v-kuXl1xgfx_SOfkRoSM=w480-h960-rw'
         },
         {
             title: 'Something Widgets',
             description: 'From Nothing to Something! Inspired by the minimalist Nothing OS, Perfected for You! ✨ Experience the sleek, minimalist beauty of widgets designed to elevate your home screen with style and functionality. From battery info to photos and a stylish clock, Something OS Widgets brings you all the essentials—without the need for any extra apps! 🎉',
-            icon: <Layout className="w-6 h-6" style={{ color: colors.primary }} />,
+            icon: 'https://play-lh.googleusercontent.com/VZ1Q6ygK9qpAVi4sL06NAZwu0coNfhs8TiahCI4srte44OCfz7aO2sN6Hh58vMB-fwg=w480-h960-rw',
         },
         {
             title: 'Android Widgets (Material U)',
             description: 'Bring the modern, sleek look of Android\'s Material U widgets to your phone, no matter what device you use! With Android Widgets (Material U), you can customize your home screen with beautifully designed, adaptive widgets that seamlessly change colors to match your wallpaper. It\'s the ultimate way to personalize your device and make it truly yours!',
-            icon: <Cpu className="w-6 h-6" style={{ color: colors.primary }} />
+            icon: 'https://play-lh.googleusercontent.com/86FZgN268As_yIwksMpFpjr6Eejir55_LX4UIqnrdZtEc_JoKWeyLaTfgOqels0Z4sI=w480-h960-rw'
         },
         {
-            title: 'CaffeInMe',
-            description: 'Track and manage your daily caffeine intake with a beautiful and intuitive interface.',
-            icon: <Coffee className="w-6 h-6" style={{ color: colors.primary }} />
+            title: 'CaffeInMe - Caffeine Tracker',
+            description: 'Your Ultimate Caffeine Tracker! 🚀Keep track of your caffeine consumption effortlessly with CaffeInMe, the ultimate caffeine tracking app! Whether you\'re a coffee addict ☕, a tea enthusiast 🍵, or an energy drink lover ⚡, CaffeInMe helps you monitor your daily caffeine intake and maintain a balanced lifestyle.',
+            icon: 'https://play-lh.googleusercontent.com/cQZmv8J1MZmZ_hz1-m-k_3k1zo6PK_gGVLuZyujMAAwJzjuWp43_DiGtUsJ2K6EmBOU=w480-h960-rw'
         }
     ];
 
@@ -100,7 +100,7 @@ const RetroPortfolio = () => {
                     &lt;/Android Developer&gt;
                 </h1>
                 <p className="text-lg" style={{ color: colors.onBackground }}>
-                    Crafting beautiful widgets and useful utilities
+                    Customization meets functionality<br />Discover sleek Android widgets and tools designed to simplify your daily experience.
                 </p>
             </header>
 
@@ -154,23 +154,26 @@ const RetroPortfolio = () => {
                     }}>
                         Featured Projects
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="rounded-lg p-6 transition-all duration-300 hover:-translate-y-2"
+                                className="rounded-lg p-6 transition-all duration-300 gap-8 hover:-translate-y-2"
                                 style={{
                                     ...projectCardStyle,
-                                    border: `2px solid ${colors.primary}`,
+                                    border: `3px solid ${colors.primary}`,
                                 }}
                             >
-                                <div className="flex items-center gap-3 mb-4">
-                                    {project.icon}
-                                    <h3 className="text-xl font-bold" style={{ color: colors.primary }}>
-                                        {project.title}
-                                    </h3>
+                                <div class="flex items-center gap-x-4">
+                                    <img class="size-16 rounded-2xl shadow-3xl border border-gray-200" src={project.icon} alt="" />
+                                    <div className="flex items-center">
+                                        <h3 className="text-xl font-bold" style={{ color: colors.primary }}>
+                                            {project.title}
+                                        </h3>
+                                    </div>
                                 </div>
-                                <p className="mb-4" style={{ color: colors.onBackground }}>
+
+                                <p className="mb-4 gap-x-12 mt-4" style={{ color: colors.onBackground }}>
                                     {project.description}
                                 </p>
                             </div>
@@ -206,7 +209,7 @@ const RetroPortfolio = () => {
                 <p className="mb-2">Made with ❤️ and lots of ☕</p>
                 <p>&copy; 2025 Android Developer</p>
             </footer>
-        </div>
+        </div >
     );
 };
 
